@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarymanagementsystem.EnterenceWindowController">
+    <stylesheets>
+        <URL value="@enterencewindow.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="629.0">
+         <children>
+            <Button fx:id="main_librarian" layoutX="82.0" layoutY="308.0" mnemonicParsing="false" onAction="#librarianPaneliAc" prefHeight="64.0" prefWidth="110.0" text="Librarian" />
+            <Button fx:id="main_reservation" layoutX="260.0" layoutY="308.0" mnemonicParsing="false" onAction="#reservationPaneliAc" prefHeight="64.0" prefWidth="110.0" text="Book Reservation" />
+            <Button fx:id="main_book" layoutX="439.0" layoutY="308.0" mnemonicParsing="false" onAction="#bookInformationPaneliAc" prefHeight="64.0" prefWidth="110.0" text="Book information" />
+            <Label fx:id="label" alignment="CENTER" layoutX="89.0" layoutY="37.0" prefHeight="53.0" prefWidth="468.0" text="Library Management System" textFill="#275082">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="181.0" layoutX="240.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../systemIcons/libraryIcon.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

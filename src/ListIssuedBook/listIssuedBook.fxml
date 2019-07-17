@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="tablePanel" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListIssuedBook.ListIssuedBookController">
+    <stylesheets>
+        <URL value="@listissuedbook.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="issuedBookTable" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="bookIdColumn" prefWidth="95.0" text="Book Id" />
+          <TableColumn fx:id="bookNameColumn" prefWidth="132.0" text="Book Name" />
+            <TableColumn fx:id="startingDateColumn" prefWidth="169.0" text="Starting Date" />
+            <TableColumn fx:id="dueDateColumn" prefWidth="203.0" text="Due Date " />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
